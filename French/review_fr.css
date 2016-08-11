@@ -1,0 +1,149 @@
+body {
+  	background-image: url("http://i.imgur.com/zmiHdBg.png");
+}
+.article_header {
+  font-size: 50px;
+  font-family: 'Catamaran', sans-serif;
+  position: relative;
+  color: #2c3e50;
+  text-align: center;
+  margin-top: 30px;
+}
+.review-header-air2 {
+  font-size: 35px;
+  font-family: 'Catamaran', sans-serif;
+  position: relative;
+  color: #2c3e50;
+  text-align: center;
+  margin-top: 50px;
+}
+.review-header-g4 {
+  font-size: 35px;
+  font-family: 'Catamaran', sans-serif;
+  position: relative;
+  color: #2c3e50;
+  text-align: center;
+  margin-top: 70px;
+}
+.review-header-time {
+  font-size: 35px;
+  font-family: 'Catamaran', sans-serif;
+  position: relative;
+  color: #2c3e50;
+  text-align: center;
+  margin-top: 90px;
+}
+.nexusPic {
+  font-size: 25px;
+  font-family: 'Catamaran', sans-serif;
+  position: relative;
+  color: #2c3e60;
+  text-align: center;
+
+}
+u {
+   text-decoration: none;
+   border-bottom: 1px solid black;
+}
+a:visited {
+  text-decoration: none;
+  color: #6b7a89;
+}
+a:link {
+  color: #6b7a89;
+  text-decoration: none;
+}
+a:hover {
+  color: #47515b;
+}
+.ipadPic, .g4pic, .timePic {
+  font-size: 25px;
+  font-family: 'Catamaran', sans-serif;
+  position: relative;
+  color: #2c3e50;
+  text-align: center;
+
+}
+.blur {
+  text-align: center;
+}
+.blur img {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+.blur img:hover {
+  -webkit-filter: blur(5px);
+}
+.blur2 {
+text-align: center;
+}
+.blur2 img {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.blur2 img:hover {
+  -webkit-filter: blur(5px);
+}
+.blur3 {
+  text-align: center;
+}
+.blur3 img {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.blur3 img:hover {
+  -webkit-filter: blur(5px);
+}
+.blur4 {
+text-align: center;
+}
+.blur4 img {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.blur4 img:hover {
+  -webkit-filter: blur(5px);
+}
+.review-text-done {
+  font-size: 40px;
+  font-family: 'Catamaran', sans-serif;
+  position: relative;
+  color: #2c3e50;
+  text-align: center;
+}
+a:visited {
+  text-decoration: none;
+  color: red;
+}
+a:link {
+  color: red;
+  text-decoration: none;
+}
+a:hover {
+  color: #801919;
+}
+.container-footer {
+  bottom: 5px;
+  width: 100%;
+  height: 20px;
+  background: #2F4F4F;
+  overflow: hidden;
+}
+.footer_info {
+  font-size: 15px;
+  font-family: 'Catamaran', sans-serif;
+  color: white;
+  text-align: center;
+}

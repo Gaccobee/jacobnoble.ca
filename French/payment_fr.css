@@ -1,0 +1,123 @@
+body {
+  	background-image: url("http://i.imgur.com/zmiHdBg.png");
+}
+.container-payment{
+  font-size: 50px;
+  font-family: 'Catamaran', sans-serif;
+  position: relative;
+  color: #2c3e50;
+  text-align: center;
+  margin-top: 30px;
+}
+.container-examples {
+  top: -60px;
+  font-size: 35px;
+  font-family: 'Catamaran', sans-serif;
+  position: relative;
+  color: #2c3250;
+  text-align: center;
+}
+.payment_page {
+  font-size: 35px;
+  font-family: 'Catamaran', sans-serif;
+  position: relative;
+  color: #2c3250;
+  text-align: center;
+}
+.button_talk {
+  font-size: 25px;
+  font-family: 'Catamaran', sans-serif;
+  position: relative;
+  color: #2c3250;
+  text-align: center;
+}
+
+u {
+   text-decoration: none;
+   border-bottom: 1px solid black;
+}
+
+.payment-demo-button {
+  text-align: center;
+}
+.payment-form {
+  text-align: center;
+}
+.form-head {
+  font-size: 18px;
+  font-family: 'Catamaran', sans-serif;
+  color: #2c3250;
+
+}
+.container-form {
+  font-size: 25px;
+  font-family: 'Catamaran', sans-serif;
+  position: relative;
+  color: #2c3250;
+  text-align: center;
+}
+.form-button {
+  font-size: 15px;
+  font-family: 'Catamaran', sans-serif;
+  color: #2c3250;
+  text-align: center;
+}
+input[type=text], select {
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 4px;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+.back-talk {
+  font-size: 25px;
+  font-family: 'Catamaran', sans-serif;
+  color: #2c3250;
+  text-align:center;
+}
+a:visited {
+  text-decoration: none;
+  color: red;
+}
+a:link {
+  color: red;
+  text-decoration: none;
+}
+a:hover {
+  color: #801919;
+}
+
+.container-footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 20px;
+  background: #2F4F4F;
+  overflow: hidden;
+}
+.footer_info {
+  font-size: 15px;
+  font-family: 'Catamaran', sans-serif;
+  color: white;
+  text-align: center;
+}
+.english_bar:visited {
+  color: white;
+  text-decoration: none;
+}
+.english_bar {
+  font-size: 15px;
+  font-family: 'Catamaran', sans-serif;
+  color: white;
+  text-align: center;
+}
+.english_bar:hover {
+  text-decoration: underline;
+}

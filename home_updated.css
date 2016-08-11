@@ -1,0 +1,453 @@
+
+body {
+	background: #1abc9c;
+	}
+
+#element {
+position: relative;
+text-align: center;
+font-family: 'Catamaran', sans-serif;
+font-size: 50px;
+color: #2c3e50;
+}
+#intro {
+	margin-bottom: -75px;
+	position: relative;
+	text-align:center;
+	font-family: 'Catamaran', sans-serif;
+	font-size: 50px;
+	color: #2c3e50;
+
+	}
+#about
+{
+	text-align: center;
+ 	font-family: 'Catamaran', sans-serif;
+ 	font-size: 33px;
+ 	color: #2c3e50;
+  	position:absolute;
+  	top: 30%;
+  	left: 50%;
+  	transform: translate(-50%, -20%);
+	}
+u {
+    text-decoration: none;
+    border-bottom: 2px solid black;
+}
+var {
+	text-decoration: none;
+	font-size: 30px;
+	}
+#skills {
+	text-align: center;
+ 	font-family: 'Catamaran', sans-serif;
+ 	font-size: 35px;
+ 	color: #2c3e50;
+	position: absolute;
+	top: 30%;
+	left: 25%;
+	transform: translate(-400%, 400%) ;
+	}
+/* .meter elements refer to the progress bars; Creates the bars; Adds color; Adds stripes; Animates stripes; */
+.meter_orange {
+	width: 400px;
+	height: 20px;
+	position: absolute;
+	background: #555;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	padding: 10px;
+	box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+	top: 30%;
+	left: 25%;
+	transform: translate(-70%, 900%);
+	}
+.meter_orange > span {
+	display: block;
+	height: 80%;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	background-color: rgba(227,167,56,1.00);
+	background-image: linear-gradient(
+	center bottom,
+	rgb(43,194,83) 37%,
+	rgb(84,240,84) 69%
+	);
+	box-shadow:
+	inset 0 2px 9px rgba(255,255,255,0.3),
+	inset 0 -2px 6px rgba(0,0,0,0.4);
+	position: relative;
+	overflow:hidden;
+	}
+.meter_orange > span:after {
+	content: "";
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	background-image: linear-gradient(
+	-45deg,
+	rgba(255, 255, 255, .2) 25%,
+	transparent 25%,
+	transparent 50%,
+	rgba(255, 255, 255, .2) 50%,
+	rgba(255, 255, 255, .2) 75%,
+	transparent 75%,
+	transparent
+	);
+	z-index: 1;
+	background-size: 50px 50px;
+	animation: move 2s linear infinite;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	overflow:hidden;
+	}
+.meter_red {
+	width: 400px;
+	height: 20px;
+	position: absolute;
+	background: #555;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	padding: 10px;
+	box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+	top: 30%;
+	left: 25%;
+	transform: translate(-70%, 1050%);
+	}
+.meter_red > span {
+	display: block;
+	height: 80%;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	background-color: rgba(221,128,130,1.00);
+	background-image: linear-gradient(
+	center bottom,
+	rgb(43,194,83) 37%,
+	rgb(84,240,84) 69%
+	);
+	box-shadow:
+	inset 0 2px 9px rgba(255,255,255,0.3),
+	inset 0 -2px 6px rgba(0,0,0,0.4);
+	position: relative;
+	overflow:hidden;
+	}
+.meter_red > span:after {
+	content: "";
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	background-image: linear-gradient(
+	-45deg,
+	rgba(255, 255, 255, .2) 25%,
+	transparent 25%,
+	transparent 50%,
+	rgba(255, 255, 255, .2) 50%,
+	rgba(255, 255, 255, .2) 75%,
+	transparent 75%,
+	transparent
+	);
+	z-index: 1;
+	background-size: 50px 50px;
+	animation: move 2s linear infinite;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	overflow:hidden;
+	}
+.meter_blue {
+	width: 400px;
+	height: 20px;
+	position: absolute;
+	background: #555;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	padding: 10px;
+	box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+	top: 30%;
+	left: 25%;
+	transform: translate(-70%, 1200%);
+	}
+.meter_blue > span {
+	display: block;
+	height: 80%;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	background-color: rgba(101,166,233,1.00);
+	background-image: linear-gradient(
+	center bottom,
+	rgb(43,194,83) 37%,
+	rgb(84,240,84) 69%
+	);
+	box-shadow:
+	inset 0 2px 9px rgba(255,255,255,0.3),
+	inset 0 -2px 6px rgba(0,0,0,0.4);
+	position: relative;
+	overflow:hidden;
+	}
+.meter_blue > span:after {
+	content: "";
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	background-image: linear-gradient(
+	-45deg,
+	rgba(255, 255, 255, .2) 25%,
+	transparent 25%,
+	transparent 50%,
+	rgba(255, 255, 255, .2) 50%,
+	rgba(255, 255, 255, .2) 75%,
+	transparent 75%,
+	transparent
+	);
+	z-index: 1;
+	background-size: 50px 50px;
+	animation: move 2s linear infinite;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	overflow:hidden;
+	}
+.meter_green {
+	width: 400px;
+	height: 20px;
+	position: absolute;
+	background: #555;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	padding: 10px;
+	box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+	top: 30%;
+	left: 25%;
+	transform: translate(-70%, 1350%);
+	}
+.meter_green > span {
+	display: block;
+	height: 80%;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	background-color: rgba(92,207,98,1.00);
+	background-image: linear-gradient(
+	center bottom,
+	rgb(43,194,83) 37%,
+	rgb(84,240,84) 69%
+	);
+	box-shadow:
+	inset 0 2px 9px rgba(255,255,255,0.3),
+	inset 0 -2px 6px rgba(0,0,0,0.4);
+	position: relative;
+	overflow:hidden;
+	}
+.meter_green > span:after {
+	content: "";
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	background-image: linear-gradient(
+	-45deg,
+	rgba(255, 255, 255, .2) 25%,
+	transparent 25%,
+	transparent 50%,
+	rgba(255, 255, 255, .2) 50%,
+	rgba(255, 255, 255, .2) 75%,
+	transparent 75%,
+	transparent
+	);
+	z-index: 1;
+	background-size: 50px 50px;
+	animation: move 2s linear infinite;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	overflow:hidden;
+	}
+.meter_orange > span:after > .animate > span > span {
+
+	}
+.animate > span:after {
+	display:none;
+	}
+@keyframes move {
+	0% {
+		background-position: 0 0;
+		}
+		100% {
+			background-position: 50px 50px;
+	}
+}
+.meter_orange > span:after, .animate > span > span {
+  animation: move 2s linear infinite;
+}
+
+#html {
+	text-align: center;
+ 	font-family: 'Catamaran', sans-serif;
+ 	font-size: 20px;
+ 	color: #2c3e50;
+  	position:absolute;
+  	top: 30%;
+  	left: 50%;
+  	transform: translate(-400%, 1040%);
+	}
+
+#js  {
+	text-align: center;
+ 	font-family: 'Catamaran', sans-serif;
+ 	font-size: 20px;
+ 	color: #2c3e50;
+  	position:absolute;
+  	top: 30%;
+  	left: 50%;
+  	transform: translate(-372%, 1220%);
+	}
+
+#jquery {
+	text-align: center;
+ 	font-family: 'Catamaran', sans-serif;
+ 	font-size: 20px;
+ 	color: #2c3e50;
+  	position:absolute;
+  	top: 30%;
+  	left: 50%;
+  	transform: translate(-505%, 1590%);
+	}
+
+#php {
+	text-align: center;
+ 	font-family: 'Catamaran', sans-serif;
+ 	font-size: 20px;
+ 	color: #2c3e50;
+  	position:absolute;
+  	top: 30%;
+  	left: 50%;
+  	transform: translate(-775%, 1410%);
+	}
+#learn {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 25px;
+	color: #2c3e50;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-10%, 385%);
+	}
+	#connect {
+		font-family: 'Catamaran', sans-serif;
+		font-size: 35px;
+		color:#2c3e50;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-302%, 750%);
+	}
+	#contact_info {
+		font-family: 'Catamaran', sans-serif;
+		font-size: 20px;
+		color: #2c3e50;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-268%, 805%);
+	}
+	/* Properly position both of these logos under the connect header at some point; also change the transform values!*/
+#linkedin_logo_round {
+position: absolute;
+top: 50%;
+transform: translate(350%, 1150%);
+}
+#google_logo_round {
+position: absolute;
+top: 50%;
+transform: translate(475%, 1150%);
+}
+#twitter_logo {
+position: absolute;
+top: 50%;
+transform: translate(450%, 892%);
+}
+input[type=text], select {
+	width: 50%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+input[type=submit]:hover {
+    background-color: #c0392b;
+}
+div {
+	position: absolute;
+	font-size: 20px;
+	color: #2c3e50;
+	border-radius: 5px;
+	font-family: 'Catamaran', sans-serif;
+	top: 50%;
+	left: 50%;
+	transform: translate(-152%, 185%);
+}
+input[type=button], input[type=submit] {
+background-color: #e74c3c;
+border: none;
+color: white;
+padding: 16px 32px;
+text-decoration: none;
+margin: 4px 2px;
+cursor: pointer;
+}
+#message {
+height: 100px;
+width: 500px;
+}
+#sendForm {
+font-family: 'Catamaran', sans-serif;
+font-size: 20px;
+color:#2c3e50;
+position: absolute;
+top: 50%;
+transform: translate(31%, 2000%);
+}
+#map {
+position: absolute;
+top: 50%;
+transform: translate(150%, 102%);
+}
+#located {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 35px;
+	color: #2c3e50;
+	position: absolute;
+	top: 50%;
+	transform: translate(354%, 755%);
+}
+#footer {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 15px
+	clear: both;
+	width: 1885px;
+	position: absolute;
+	background-color: #696969;
+	color: white;
+	text-align:center;
+	padding: 5px;
+	top: 50%;
+	transform: translate(-50%, 4000%);
+}
+#footer_div {
+	font-family: 'Catamaran', sans-serif;
+	background: #696969;
+}

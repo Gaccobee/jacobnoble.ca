@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<title>Home</title>
+<link rel="stylesheet" type="text/css" href="home_updated.css">
+<!-- Link to use the Catamaran font -->
+<link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet" type="text/css">
+<!-- Link to the favicon -->
+<link rel="shortcut icon" href="http://s31.postimg.org/qddgelmuv/logo_cropped.png">
+<!-- Link to use the Google Maps API-->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+ </head>
+
+<body>
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<!-- typed.js plugin -->
+<script src="typed.js"> </script>
+<script>
+ $(document).ready(function(){
+      $("#element").typed({
+        strings: ["My name is Jacob", "I'm a Front-End Web Developer"],
+        typeSpeed: 0.5,
+		showCursor: false,
+      });
+  });
+// Wallpaper changes colors as user scrolls
+  var tStart = 100 // Start transition 100px from top
+  , tEnd = 500   // End at 500px
+  , cStart = [26, 188, 156]  // Blue-ish
+  , cEnd = [39, 174, 96]  // Blue
+  , cDiff = [cEnd[0] - cStart[0], cEnd[1] - cStart[1], cEnd[1] - cStart[0]];
+
+$(document).ready(function(){
+    $(document).scroll(function() {
+        var p = ($(this).scrollTop() - tStart) / (tEnd - tStart); // % of transition
+        p = Math.min(1, Math.max(0, p)); // Clamp to [0, 1]
+        var cBg = [Math.round(cStart[0] + cDiff[0] * p), Math.round(cStart[1] + cDiff[1] * p), Math.round(cStart[2] + cDiff[2] * p)];
+        $("body").css('background-color', 'rgb(' + cBg.join(',') +')');
+    });
+});
+</script>
+<p id="intro"> Hi </p>
+<p id="element"></p> <br>
+<p id="about"><u>About myself</u><br>
+I'm Jacob. I like to develop and design websites. I love almost everything that has to do with the web and enjoy learning new things. I enjoy
+using HTML, CSS, JavaScript, and jQuery.</p><br>
+
+<p id="skills"><u> Skills</u></p>
+<!-- Progress bars-->
+<div class="meter_orange">
+<span style="width: 70%"> </span>
+</div>
+<div class="meter_red">
+<span style="width: 70%"> </span>
+</div>
+<div class="meter_blue">
+<span style="width: 20%"> </span>
+</div>
+<div class="meter_green">
+<span style="width: 10%"> </span>
+</div>
+<div class="animate_meter">
+<span style="width:50%"><span> </span></span>
+</div>
+<!-- Skill text that goes beside the progress bars-->
+<p id="html">(html/css) </p>
+<p id="js"> (javascript)</p>
+<p id="jquery">(jQuery) </p>
+<p id="php"> (php)</p>
+<!-- Learning pitch -->
+<p id="learn">I'm always looking to learn new ways to do things and increase what I'm able to do. <br>
+The less I know about it, the better! With that said, I will learn it fast.</p>
+<!-- Contact header-->
+<p id="connect"><u>Let's get in touch!</u></p>
+<!-- Contact information-->
+<p id="contact_info"> E-mail: Jacob.noble989@gmail.com<br> 613-799-3933
+</p>
+<!-- Social media logos; Clicks bring to profile-->
+<a href="https://www.linkedin.com/in/jacob-noble-71474964?trk=nav_responsive_tab_profile" id="linkedin_logo_round">
+<img src="http://s32.postimg.org/iri9e9i11/linkedin_icon.png" alt="linkedin_round" width="50" height="50">
+</a>
+<a href="https://plus.google.com/115362770613252297266" id="google_logo_round">
+<img src="http://s32.postimg.org/r2e83v2px/Google_logo.png" alt="google_round" width="50" height="50">
+</a>
+<a href="https://twitter.com/Obviousresons" id="twitter_logo">
+  <img src="http://s32.postimg.org/xddfr8r45/Twitter_Logo_white.png" alt="twitter_logo" width="65" height="65">
+</a>
+
+<p id="sendForm">If copying an e-mail isn't your thing, just use the form to send me one! </p>
+
+<script>
+// Function to thank the user for sending a e-mail -- Through a alert
+function thanks() {
+  alert("Thanks for sending the e-mail!");
+}
+</script>
+
+<div id="form">
+  <!-- email.php works well, but only on the live site. Does not work in XAMPP ; Not sure why ; Work on re-directing user back to page after email is sent -->
+<form action="email.php" method="post">
+  <label for="name"> Name</label> <br>
+  <input type="text" id="name" name="fullName"> <br>
+  <label for="email"> E-mail</label> <br>
+  <input type="text" id="email" name="email_address"> <br>
+  <label for ="message"> Message</label> <br>
+  <input type="text" id="message" name="emailMessage">
+  <br>
+<input type="submit" value ="Submit" name="saveForm" onclick="thanks()">
+</form>
+</div>
+
+<p id="located"><u>Where am I located?</u> </p>
+<!-- Google maps api  * Uses a embedded map instead of the original API stuff I wanted to do; Works though-->
+<iframe id="map" width="700" height="550" style="border:0"
+src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJrxNRX7IFzkwR7RXdMeFRaoo&key=AIzaSyDXM3MZjAVjgmBSf6XhRqe5ETzEC7pJR_M"
+allowfullscreen></iframe>
+
+<!-- Footer stuff; Need to work on the footer's width, and the actual footer itself. It's kind of ugly -->
+<div id="footer_div">
+<p id="footer">Developed by: Jacob Noble. E-mail: Jacob.noble989@gmail.com. &copy; All rights reserved 2016</p>
+</div>
+
+<script>
+// Animates the progress bars, kind of loads them in
+$(".meter_orange > span").each(function() {
+  $(this)
+    .data("origWidth", $(this).width())
+    .width(0)
+    .animate({
+      width: $(this).data("origWidth") // or + "%" if fluid
+    }, 1200);
+$(".meter_blue > span").each(function() {
+  $(this)
+    .data("origWidth", $(this).width())
+    .width(0)
+    .animate({
+      width: $(this).data("origWidth") // or + "%" if fluid
+    }, 1200);
+$(".meter_red > span").each(function() {
+  $(this)
+    .data("origWidth", $(this).width())
+    .width(0)
+    .animate({
+      width: $(this).data("origWidth") // or + "%" if fluid
+    }, 1200);
+$(".meter_green > span").each(function() {
+  $(this)
+    .data("origWidth", $(this).width())
+    .width(0)
+    .animate({
+      width: $(this).data("origWidth") // or + "%" if fluid
+    }, 1200);
+});
+});
+});
+});
+</script>
+</body>
+</html>

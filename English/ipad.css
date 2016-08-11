@@ -1,0 +1,58 @@
+body {
+  	background-image: url("http://i.imgur.com/zmiHdBg.png");
+}
+.ipad-header-text {
+  font-size: 50px;
+  font-family: 'Catamaran', sans-serif;
+  position: relative;
+  color: #2c3e50;
+  text-align: center;
+  margin-top: 30px;
+}
+.ipad-review-text {
+  font-size: 20px;
+  font-family: 'Catamaran', sans-serif;
+  position: relative;
+  color: #2c3e50;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+.ipad-review-text-done {
+  font-size: 40px;
+  font-family: 'Catamaran', sans-serif;
+  position: relative;
+  color: #2c3e50;
+  text-align: center;
+}
+u {
+   text-decoration: none;
+   border-bottom: 1px solid black;
+}
+a:visited {
+  text-decoration: none;
+  color: red;
+}
+a:link {
+  color: red;
+  text-decoration: none;
+}
+a:hover {
+  color: #801919;
+}
+.container-footer {
+  bottom: 5px;
+  width: 100%;
+  height: 83px;
+  background: #2F4F4F;
+  overflow: hidden;
+}
+.footer_info {
+  font-size: 15px;
+  font-family: 'Catamaran', sans-serif;
+  color: white;
+  text-align: center;
+}
+.google_translate_widget {
+text-align: center;
+}
