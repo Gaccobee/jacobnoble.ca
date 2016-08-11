@@ -1,0 +1,117 @@
+body {
+  	background-image: url("http://i.imgur.com/zmiHdBg.png");
+}
+.hi {
+font-size: 50px;
+font-family: 'Catamaran', sans-serif;
+position: relative;
+color: #2c3e50;
+text-align: center;
+}
+.container-fluid {
+  position: relative;
+  margin-top: 30px;
+  color: #2c3e50;
+  bottom: 20%;
+  text-align: center;
+  height: 400px;
+}
+.container-myself {
+  position: relative;
+  margin-top: -230px;
+  color: #2c3e50;
+  text-align: center;
+}
+p {
+  font-size: 50px;
+  font-family: 'Catamaran', sans-serif;
+}
+u {
+   text-decoration: none;
+   border-bottom: 1px solid black;
+}
+.myself_header, .skills_header, .work_header, .connect_header, .evolution_header, .location_header, .progress_header {
+  font-size: 40px;
+  font-family: 'Catamaran', sans-serif;
+  color: #2c3e50;
+  text-align: center;
+}
+.myself, .work, .connect, .progress-text {
+  font-size: 30px;
+  font-family: 'Catamaran', sans-serif;
+  text-align: center;
+}
+.download_section {
+  font-size: 30px;
+  font-family: 'Catamaran', sans-serif;
+  text-align: center;
+}
+.container-skills {
+  position: relative;
+  margin: auto;
+}
+.progress {
+  position: relative;
+  width: 45%;
+  margin: auto;
+  background-color: #2F4F4F;
+}
+.container-work {
+  position: relative;
+  margin-top: 30px;
+  color: #2c3e50;
+  text-align: center;
+}
+.container-social, .container-location, .container-map, .container-progress {
+  position: relative;
+  color: #2c3e50;
+  text-align: center;
+}
+a:visited {
+  text-decoration: none;
+  color: red;
+}
+a:link {
+  color: red;
+  text-decoration: none;
+}
+a:hover {
+  color: #801919;
+}
+.weather-sticker {
+  position: relative;
+  font-size: 50px;
+  font-family: 'Catamaran', sans-serif;
+  color: #2c3e50;
+  text-align: center;
+}
+.container-footer {
+  bottom: 5px;
+  width: 100%;
+  height: 83px;
+  background: #2F4F4F;
+  overflow: hidden;
+}
+.footer_info {
+  font-size: 15px;
+  font-family: 'Catamaran', sans-serif;
+  color: white;
+  text-align: center;
+}
+.google_translate_widget {
+text-align: center;
+}
+
+.french_bar:visited {
+  color: white;
+  text-decoration: none;
+}
+.french_bar {
+  font-size: 15px;
+  font-family: 'Catamaran', sans-serif;
+  color: white;
+  text-align: center;
+}
+.french_bar:hover {
+  text-decoration: underline;
+}
