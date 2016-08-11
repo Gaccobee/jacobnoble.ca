@@ -93,12 +93,11 @@ a:link {
 a:hover {
   color: #801919;
 }
-
 .container-footer {
   position: fixed;
   bottom: 0px;
   width: 100%;
-  height: 20px;
+  height: 83px;
   background: #2F4F4F;
   overflow: hidden;
 }
@@ -107,4 +106,11 @@ a:hover {
   font-family: 'Catamaran', sans-serif;
   color: white;
   text-align: center;
+}
+.google_translate_widget {
+text-align: center;
+}
+.french_bar:visited {
+  color: white;
+  text-decoration: none;
 }

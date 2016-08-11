@@ -36,7 +36,7 @@ u {
   color: #2c3e50;
   text-align: center;
 }
-.myself, .work, .connect, .progress-text {
+.myself, .work, .connect, .progress-text, .download_section {
   font-size: 30px;
   font-family: 'Catamaran', sans-serif;
   text-align: center;
@@ -73,6 +73,14 @@ a:link {
 a:hover {
   color: #801919;
 }
+.weather-sticker {
+  position: relative;
+  font-size: 50px;
+  font-family: 'Catamaran', sans-serif;
+  color: #2c3e50;
+  text-align: center;
+}
+
 .container-footer {
   bottom: 5px;
   width: 100%;

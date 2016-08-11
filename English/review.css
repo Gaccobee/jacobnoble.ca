@@ -33,6 +33,14 @@ body {
   text-align: center;
   margin-top: 90px;
 }
+.nexusPic {
+  font-size: 25px;
+  font-family: 'Catamaran', sans-serif;
+  position: relative;
+  color: #2c3e60;
+  text-align: center;
+
+}
 u {
    text-decoration: none;
    border-bottom: 1px solid black;
@@ -95,6 +103,19 @@ text-align: center;
 .blur3 img:hover {
   -webkit-filter: blur(5px);
 }
+.blur4 {
+text-align: center;
+}
+.blur4 img {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.blur4 img:hover {
+  -webkit-filter: blur(5px);
+}
 .review-text-done {
   font-size: 40px;
   font-family: 'Catamaran', sans-serif;
@@ -116,7 +137,7 @@ a:hover {
 .container-footer {
   bottom: 5px;
   width: 100%;
-  height: 20px;
+  height: 83px;
   background: #2F4F4F;
   overflow: hidden;
 }
@@ -125,4 +146,7 @@ a:hover {
   font-family: 'Catamaran', sans-serif;
   color: white;
   text-align: center;
+}
+.google_translate_widget {
+text-align: center;
 }
