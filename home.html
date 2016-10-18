@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Home </title>
+   <meta charset="utf-8">
+  <!-- Bootstrap stuff -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<!-- My css sheet needs to be after the bootstrap css or else it won't work -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet"><link rel="stylesheet" type="text/css" href="home.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- FontAwesome.io stuff-->
+<script src="https://use.fontawesome.com/69f5187813.js"></script>
+
+</head>
+
+<body>
+<div class="wrapper">
+<div id="intro" class="container">
+<h1><u>Jacob Noble</u> </h1> <br>
+<p id="intro_p">Web developer </p> <br>
+<div id="images" class="container">
+  <a href="https://github.com/Gaccobee"><i class="fa fa-github fa-3x" aria-hidden="true" hspace="15"></i> </a>
+  <a href="https://twitter.com/Obviousresons"><i class="fa fa-twitter-square fa-3x" aria-hidden="true" hspace="15"></i> </a>
+  <a href="#Contact">  <i class="fa fa-envelope-o fa-3x" aria-hidden="true" top="500px"></i>
+ </a>
+  <br><br>
+  <a href="#projects-title"><img src="http://i.imgur.com/uX2AoPS.png" alt="" width="40" height="40" /></a>
+
+  <script>
+  $('a[href^="#"]').on('click', function(event) {
+
+    var target = $(this.getAttribute('href'));
+
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+
+});
+</script>
+  <!-- End of images-->
+  </div>
+  <!-- End of intro-->
+  </div>
+
+<div id="projects_content" class="container">
+  
+<h1 id="projects-title"> Projects </h1>
+<br>
+<p id ="project-pebble">
+Name of project: <br><u>Minimalist</u><br><br>
+Resource(s) used:<br>
+<u>C; Google</u><br><br>
+Platform: <br>
+<u>Pebble smartwatch</u><br><br>
+200+ installs;<br>
+<a href="https://apps.getpebble.com/applications/5599d4c61eafade449000086"><strong>Take me to it </strong></a>
+</p>
+<br><br>
+
+<p id="project-author">
+Name of project: <br><u>Donald's website</u><br><br>
+Resource(s) used:<br>
+<u>HTML/CSS; Javascript; Bootstrap; PHP; Google </u><br><br>
+Platform:<br>
+<u>Website</u><br><br>
+<a href="http://www.donandersondogbooks.com"><strong>Take me to it</strong></a>
+</p>
+<br><br>
+
+<p id="old-website">
+Name of project:<br><u>Version 1 of this website</u><br><br>
+Resource(s) used:<br>
+<u>HTML/CSS; Javasript; jQuery; Bootsrap; APIs; Google </u><br><br>
+Platform:<br>
+<u>Website</u><br><br>
+<a href="http://www.jacobnoble.ca/old/home.html"><strong>Take me to it</strong></a>
+</p>
+
+<br>
+<a href="#skills-title"><img src="http://i.imgur.com/uX2AoPS.png" alt="" width="40" height="40" /></a>
+<script>
+$('a[href^="#"]').on('click', function(event) {
+
+  var target = $(this.getAttribute('href'));
+
+  if( target.length ) {
+      event.preventDefault();
+      $('html, body').stop().animate({
+          scrollTop: target.offset().top
+      }, 1000);
+  }
+
+});
+</script>
+<!-- End of projects_content-->
+</div>
+
+
+
+<div id="skills_content" class="container">
+<h1 id="skills-title">Talents</h1>
+<br>
+<p id="languages-title">Languages </p>
+<p id="languages-desc">HTML; > 2.5 years<br><br>
+                      CSS; > 2.5 years<br><br>
+                      Javascript; > 2.5 years<br><br>
+                      PHP; < 1.5 years<br><br>
+                      English; > 14 years<br><br>
+                      French; > 14 years
+
+</p><br><br>
+<p id="frameworks-title">Frameworks // Libraries </p>
+<p id="frameworks-desc">Bootstrap; < 1 year<br><br>
+                          jQuery; < 1 year<br><br>
+                          Node.js; < 1 year
+
+</p><br><br>
+<p id="tools-title">Tools</p>
+<p id="tools-desc"> Github; < 1.5 years<br><br>
+                    Atom; < 2 years<br><br>
+                    Photoshop; < 1 year<br><br>
+                    Paint.NET; < 1.5 years<br><br>
+                    Office suite; > 7 years
+
+</p><br>
+<p id="learn-text">
+*Constantly learning
+</p>
+
+
+<!--
+<p id="description-skills" style="text-align:center;">
+  *Note: Constantly improving my skills.<br> Right now I'm focusing on MySQL and PHP.
+</p>-<br>
+<a href="#contact-title"><img src="http://i.imgur.com/uX2AoPS.png" alt="" width="40" height="40" /></a>-->
+<script>
+$('a[href^="#"]').on('click', function(event) {
+
+  var target = $(this.getAttribute('href'));
+
+  if( target.length ) {
+      event.preventDefault();
+      $('html, body').stop().animate({
+          scrollTop: target.offset().top
+      }, 1000);
+  }
+
+});
+</script>
+</div>
+<div id="Contact" class="container"><br>
+<h1 id="contact-title">Contact</h1>
+<br><br>
+<form name="myForm" action="email.php" method="post">
+    <label for="fname"> First Name </label><br>
+    <input type="text" id="fname" name="fname" required>
+    <br><br>
+    <label for="lname"> Last Name </label><br>
+    <input type="text" id="lname" name="lname" required>
+    <br><br>
+    <label for="country"> Subject </label><br>
+    <input type="text" id="country" name="country">
+    <br><br>
+    <label for="email"> E-mail </label><br>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+    <label for="body"> Message </label><br>
+    <textarea rows="8" cols="70" name="message" id="message" required></textarea>
+    <br><br>
+    <input type="submit" value="Send it">
+  </form>
+<!-- End of contact -->
+</div>
+
+<div id="footer" class="container">
+<p id="footer-info">
+2016 - All rights reserved; Created by Jacob Noble in Ottawa
+</p>
+<!-- End of footer-->
+</div>
+
+<!-- End of wrapper-->
+</div>
+
+<!-- Google analytics stuff -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-79160671-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
